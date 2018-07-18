@@ -1,0 +1,76 @@
+.btn {
+    color: white !important;
+    background-color: black !important;
+    border-color: white !important;
+}
+
+.jumbotron {
+    border-radius: 0rem !important;
+    color: white !important;
+    margin-bottom: 0px !important;
+    padding-top: 100px !important;
+}
+
+.bg-dark {
+    color: white !important;
+}
+
+.bottom-part {
+    margin-top: 2rem;
+}
+
+.logo {
+    font-size: 200px;
+}
+
+.display-5, h4 {
+    padding-top: 20px;
+}
+
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.list-group {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.lead, .small {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    padding-bottom: 50px;
+}
+
+#offers {
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-6 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    
+    .small {
+        padding-bottom: 50px;
+        
+    }
+    
+    .row {
+        padding-bottom: 10px;
+    }
+    
+}
