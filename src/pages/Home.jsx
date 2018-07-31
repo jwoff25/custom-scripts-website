@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css'
 //import Navbar from '../components/Navbar.jsx';
 //import Footer from '../components/Footer.jsx';
@@ -10,10 +11,11 @@ class Home extends Component {
                 <div className="jumbotron text-center bg-dark">
 					<h1>Your programming solutions, here.</h1> 
 					<p>Customized scripts to automate boring tasks, fully functional websites built from the ground up, and more. </p> 
-					<p><a className="btn btn-primary btn-lg" href="/" role="button">Place an Order &raquo;</a></p>
+					<p><Link className="btn btn-primary btn-lg" to="/order" role="button">Place an Order &raquo;</Link></p>
 				</div>
 				<Description />
 				<MainPoints />
+				<Quote />
             </div>
         );
     }
@@ -22,9 +24,10 @@ class Home extends Component {
 class Description extends Component {
     render() {
         return (
-            <div>
+            <div className="bg-light">
                 <div className="container-fluid">
-                	<h1 className="text-center display-5">Our Services</h1>
+                	<h1 className="text-center display-5" id="service">Our Services</h1>
+                	<br/>
                 	<div className="row">
                 		<div className="col-sm-1"/>
 	                	<div className="col-sm-5 text-center">
@@ -37,7 +40,7 @@ class Description extends Component {
 								<li class="list-group-item">Usually takes 1~2 days (depending on project)</li>
 								<li class="list-group-item">Email Support</li>
 							</ul>
-	                		<p><a className="btn btn-primary btn-lg" href="/scripts" role="button">Learn More &raquo;</a></p>
+	                		<p><Link className="btn btn-primary btn-lg" to="/scripts" role="button">Learn More &raquo;</Link></p>
 	                	</div>
 	                	<div className="col-sm-5 text-center">
 	                		<span className="fab fa-html5 fa-10x"/>
@@ -49,7 +52,7 @@ class Description extends Component {
 								<li class="list-group-item">Can take more than a week (depending on project)</li>
 								<li class="list-group-item">Full Email/Chat Support (on any SMS platform)</li>
 							</ul>
-	                		<p><a className="btn btn-primary btn-lg" href="/webdev" role="button">Learn More &raquo;</a></p>
+	                		<p><Link className="btn btn-primary btn-lg" to="/webdev" role="button">Learn More &raquo;</Link></p>
 	                	</div>
 	                	<div className="col-sm-1"/>
 	                </div>
@@ -64,7 +67,7 @@ class MainPoints extends Component {
 		return (
 			<div className="bg-dark">
                 <div className="container-fluid">
-                	<h1 className="text-center display-5" id="offers">What We Offer</h1>
+                	<h1 className="text-center display-5" id="offers">What We Offer</h1><br/>
                 	<div className="row">
 	                	<div className="col-sm-4 text-center">
 	                		<span className="fas fa-dollar-sign fa-2x"/>
@@ -101,6 +104,37 @@ class MainPoints extends Component {
 	                </div>
                 </div>
             </div>	
+		);
+	}
+}
+
+class Quote extends Component {
+	render() {
+		return(
+			<div className="bg-light">
+				<div className="container">
+					<h1 className="text-center display-5" id="offers">Get a Quote / Ask a Question</h1><br/>
+					<form>
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Email address</label>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Inquiry</label>
+							<select class="form-control" id="exampleFormControlSelect1">
+								<option selected disabled hidden>Select</option> 
+								<option value="script">Custom Scripts</option>
+								<option value="website">Website</option>
+								<option>Question</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Description</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
 		);
 	}
 }

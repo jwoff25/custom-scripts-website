@@ -5,6 +5,9 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Webpage from './pages/Webpage.jsx';
 import CustomScripts from './pages/CustomScripts.jsx';
+import Order from './pages/Order.jsx';
+import Contact from './pages/Contact.jsx';
+
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 
@@ -18,6 +21,8 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/webdev" component={Webpage} />
           <Route path="/scripts" component={CustomScripts} />
+          <Route path="/order" component={Order} />
+          <Route path="/contact" component={Contact} />
           <Footer />
         </div>
       </Router>

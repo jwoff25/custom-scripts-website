@@ -56,6 +56,19 @@ h2 {
 
 #offers {
     padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom-color: white;
+    border-bottom: 1px solid;
+    width: 40%;
+    margin: 0 auto;
+}
+
+#service {
+    padding-bottom: 20px;
+    border-bottom-color: black;
+    border-bottom: 1px solid;
+    width: 40%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,7 +83,7 @@ h2 {
     }
     
     .row {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
     
 }
