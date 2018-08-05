@@ -113,7 +113,7 @@ class Quote extends Component {
 		return(
 			<div className="bg-light">
 				<div className="container">
-					<h1 className="text-center display-5" id="offers">Get a Quote / Ask a Question</h1><br/>
+					<h1 className="text-center display-5" id="offers">Inquiries</h1><br/>
 					<form>
 						<div class="form-group">
 							<label for="exampleFormControlInput1">Email address</label>

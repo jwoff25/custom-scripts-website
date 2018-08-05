@@ -6,10 +6,12 @@ import './Webpage.css'
 class Webpage extends Component {
     render() {
         return (
-            <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-                <div className="col-md-5 p-lg-5 mx-auto my-5">
-                    <h1 className="display-4 font-weight-normal">Web Development</h1>
-                    <p className="lead font-weight-normal">Get your own personal website made fast and cheap. Read below for details and instructions.</p>
+            <div>
+                <div class="jumbotron bg-dark">
+                    <div class="container text-center">
+                      <h2 class="display-6">A Website For Your Ideas</h2>
+                      <p></p>
+                    </div>
                 </div>
                 <Description />
             </div>
@@ -21,7 +23,13 @@ class Description extends Component {
     render() {
         return (
             <div className="container">
-                
+                <div className="row">
+                    <div className="col-sm-8">
+                    </div>
+                    <div className="col-sm-4">
+                        <span className="fab fa-wordpress fa-10x"/>
+                    </div>
+                </div>
             </div>
         );
     }
