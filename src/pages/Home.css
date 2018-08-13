@@ -7,8 +7,7 @@
 .jumbotron {
     border-radius: 0rem !important;
     color: white !important;
-    margin-bottom: 0px !important;
-    padding-top: 100px !important;
+    padding-top: 200px !important;
 }
 
 .bg-dark {
@@ -39,9 +38,8 @@
     margin: 0 auto;
 }
 
-h2 {
-    padding-top: 10px;
-    padding-bottom: 5px;
+h2, h4 {
+    padding-bottom: 30px;
 }
 
 .lead, .small {
@@ -69,6 +67,10 @@ h2 {
     border-bottom: 1px solid;
     width: 40%;
     margin: 0 auto;
+}
+
+.vertical-timeline-element-title, .vertical-timeline-element-subtitle {
+    color: black;
 }
 
 @media screen and (max-width: 768px) {
