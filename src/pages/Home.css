@@ -1,3 +1,7 @@
+body {
+    font-family: Metrophobic;
+}
+
 .btn {
     color: white !important;
     background-color: black !important;
@@ -8,6 +12,7 @@
     border-radius: 0rem !important;
     color: white !important;
     padding-top: 200px !important;
+    margin-bottom: 0px !important;
 }
 
 .bg-dark {
@@ -73,6 +78,45 @@ h2, h4 {
     color: black;
 }
 
+.fas {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#title {
+    border: groove;
+    border-radius: 5px;
+}
+
+#title-text {
+    margin-top: 8px !important;
+    font-size: 3em;
+}
+
+#midtext {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#aa {
+    
+}
+
+#desc-row2 {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+#desc-row1 {
+    padding-bottom: 100px;
+}
+
+#desc {
+    padding-top: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .col-sm-6 {
         text-align: center;
@@ -86,6 +130,30 @@ h2, h4 {
     
     .row {
         padding-bottom: 5px;
+    }
+    
+    #page-title {
+        font-size: 36px;
+    }
+    
+    #title {
+        font-size: 12px !important;
+    }
+    
+    .desc-comp {
+        padding-bottom: 50px;
+    }
+    
+    #first-row {
+        padding-top: 45px;
+    }
+    
+    #desc-row1 {
+        padding-bottom: 25px !important;
+    }
+    
+    #midtext {
+        
     }
     
 }

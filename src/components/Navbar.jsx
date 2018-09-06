@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Scrollspy from 'react-scrollspy';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -22,7 +23,6 @@ class Navbar extends Component {
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <Link class="dropdown-item" to="/webdev">Web Development</Link>
                                     <Link class="dropdown-item" to="/scripts">Custom Scripts</Link>
                                 </div>
                             </li>
@@ -30,7 +30,7 @@ class Navbar extends Component {
                                 <Link className="nav-link" to="/order">Order</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/contact">Contact</Link>
+                                <Link className="nav-link" id="special-nav" to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </div>

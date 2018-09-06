@@ -17,4 +17,13 @@ class Order extends Component {
     }
 }
 
+class Intro extends Component {
+    render() {
+        return (
+            <div>
+            </div>
+        );
+    }
+}
+
 export default Order;
