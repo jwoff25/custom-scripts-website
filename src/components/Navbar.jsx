@@ -1,41 +1,38 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line
 import Scrollspy from 'react-scrollspy';
 import './Navbar.css';
 
 class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className='container'>
-                    <Link className="navbar-brand" to="/">CustomScripts</Link>
-                    <div className="collapse navbar-collapse" id="navbarCollapse">
-                        <ul className="navbar-nav ml-auto">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/about">About</Link>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <Link class="dropdown-item" to="/scripts">Custom Scripts</Link>
-                                </div>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/order">Order</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" id="special-nav" to="/contact">Contact</Link>
-                            </li>
-                        </ul>
+            <Scrollspy items={ ['home', 'description', 'mainpoints', 'userform'] } currentClassName="is-current">
+                <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className='container'>
+                        <Link className="navbar-brand" to="/">CustomScripts</Link>
+                        <div className="collapse navbar-collapse" id="navbarCollapse">
+                            <ul className="navbar-nav ml-auto">
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#home">Home <span className="sr-only">(current)</span></a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#description">Services</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#mainpoints">Offers</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" id="special-nav" href="#userform">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>  
+            </Scrollspy>
         );
     }
 }

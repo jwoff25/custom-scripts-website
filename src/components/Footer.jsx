@@ -4,7 +4,7 @@ import './Footer.css';
 class Footer extends Component {
     render() {
         return (
-            <footer class="footer">
+            <footer class="footer bg-dark">
                 <div class="container">
                     <span class="text-muted">&copy; CustomScripts</span>
                 </div>

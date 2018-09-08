@@ -10,15 +10,15 @@ import Form from '../components/Form.jsx';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div id="home">
                 <div className="jumbotron text-center bg-dark">
 					<h1 className="display-4" id="page-title">> Automate your processes.</h1> 
 					<p className="lead">Tech consulting and scripting solutions for tedious daily/business related tasks. Easy to use, and easier to get started.</p><br/>
-					<p><Link className="btn btn-primary btn-lg" to="/order" role="button">Place an Order &raquo;</Link></p>
+					<p><Link className="btn btn-primary btn-lg" to="/" role="button">Place an Order &raquo;</Link></p>
 				</div>
 				<Description />
-				<ServiceList />
 				<MainPoints />
+				<ServiceList />
 				<Form />
             </div>
         );
@@ -28,12 +28,13 @@ class Home extends Component {
 class Description extends Component {
     render() {
         return (
+        	<div id="description">
             <div className="bg-light" id="desc">
                 <div className="container-fluid text-center">
                 	<div className="row" id="desc-row1">
                 		<div className="col-sm-4 text-center"/>
 	                	<div className="col-sm-4 text-center" id="title">
-	                		<h1 id="title-text">Our Services</h1>
+	                		<h1 className="display-4">Our Services</h1>
 	                	</div>
                 		<div className="col-sm-4 text-center"/>
                 	</div>
@@ -86,113 +87,69 @@ class Description extends Component {
 	                
                 </div>
             </div>
-        );
-    }
-}
-
-// eslint-disable-next-line
-class Description2 extends Component {
-    render() {
-        return (
-            <div className="bg-light" id="desc">
-                <div className="container-fluid">
-                	<div className="row" id="desc-row1">
-	                	<div className="col-sm-6 text-center">
-	                		<span className="fas fa-clipboard-list fa-10x"/>
-	                		<h2 className="display-6">Small Scale Tech Consulting</h2>
-	                		<h4 className="display-6">We will help you evaluate any tedious or inefficient work in your business and present automated solutions.</h4>
-	                		<p>Any business has their fair share of tedious tasks. Filling out excel sheets, gathering information from online sources, keeping track of emails, and so on. 
-	                		You can submit these tasks to us, and we can help you create an automated program that can greatly reduce the amount of time spent on these tasks.
-	                		Since everything will be done remotely, communication will be through skype or your messaging platform of choice. The solution will be well described and documented
-	                		to prevent any kind of miscommunication in order to make sure that the program fits the job.
-	                		</p>
-	                	</div>
-	                	<div className="col-sm-6 text-center">
-	                		<span className="fas fa-code fa-10x"/>
-	                		<h2 className="display-6">Process Automation</h2>
-	                		<h4 className="display-6">Eliminate busy work and optimize your job using our programs.</h4>
-	                		<p>After agreeing upon a solution for the inefficient processes, we will develop a programmed solution based on your requirements. 
-	                		The script will be throughly tested and made to fit you/your business' needs. The program will be easy to use for anybody, at all levels of computer literacy.
-	                		The final product will be delivered with technical documentation for those in need of technical details, as well as a manual for usage. We will assist you until and after 
-	                		the program has been deployed. Small changes can be made at no charge for a certain duration - any changes after that will cost extra.
-	                		</p>
-	                	</div>
-	                </div>
-                </div>
             </div>
         );
     }
-}
-
-// eslint-disable-next-line
-class Timeline extends Component {
-	render() {
-		return (
-			<div className="bg-dark container-fluid">
-				<h1 className="text-center display-5" id="offers">General Timeline</h1><br/>
-				<VerticalTimeline>
-					  <VerticalTimelineElement
-					    className="vertical-timeline-element--work"
-					    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					  >
-					    <h3 className="vertical-timeline-element-title">Consulting</h3>
-					    <h4 className="vertical-timeline-element-subtitle">1~2 days</h4>
-					    <p>
-					      Discuss time consuming business processes and potential programmable solutions.
-					    </p>
-					  </VerticalTimelineElement>
-					  <VerticalTimelineElement
-					    className="vertical-timeline-element--work"
-					    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					  >
-					    <h3 className="vertical-timeline-element-title">Preparation</h3>
-					    <h4 className="vertical-timeline-element-subtitle">Same Day</h4>
-					    <p>
-					      Plan out timeline, from development of tool to deployment and even training. Gather required resources for testing (explained below).
-					    </p>
-					  </VerticalTimelineElement>
-					  <VerticalTimelineElement
-					    className="vertical-timeline-element--work"
-					    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					  >
-					    <h3 className="vertical-timeline-element-title">Development</h3>
-					    <h4 className="vertical-timeline-element-subtitle">1~ days (depends on scale)</h4>
-					    <p>
-					      Tool will be developed and tested according to parameters given by customer. Program will be tested and documentation will be created for ease of use.
-					    </p>
-					  </VerticalTimelineElement>
-					  <VerticalTimelineElement
-					    className="vertical-timeline-element--work"
-					    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-					  >
-					    <h3 className="vertical-timeline-element-title">Deployment</h3>
-					    <h4 className="vertical-timeline-element-subtitle">1 day</h4>
-					    <p>
-					      Deliver tool to customer, and provide assistance until the script is working properly.
-					    </p>
-					  </VerticalTimelineElement>
-					  <VerticalTimelineElement
-					    className="vertical-timeline-element--education"
-					    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-					  >
-					    <h3 className="vertical-timeline-element-title">Technical Support</h3>
-					    <h4 className="vertical-timeline-element-subtitle">Forever.</h4>
-					    <p>
-					      24/7 assistance for any tools developed by us.
-					    </p>
-					  </VerticalTimelineElement>
-					  
-				</VerticalTimeline>	
-			</div>
-		);
-	}
 }
 
 class ServiceList extends Component {
 	render() {
 		return(
 			<div className="bg-light">
-				
+				<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			      <h1 class="display-4">Pricing</h1>
+			      <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+			    </div>
+			
+			    <div class="container">
+			      <div class="card-deck mb-3 text-center">
+			        <div class="card mb-4 shadow-sm">
+			          <div class="card-header">
+			            <h4 class="my-0 font-weight-normal">Free</h4>
+			          </div>
+			          <div class="card-body">
+			            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+			            <ul class="list-unstyled mt-3 mb-4">
+			              <li>10 users included</li>
+			              <li>2 GB of storage</li>
+			              <li>Email support</li>
+			              <li>Help center access</li>
+			            </ul>
+			            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+			          </div>
+			        </div>
+			        <div class="card mb-4 shadow-sm">
+			          <div class="card-header">
+			            <h4 class="my-0 font-weight-normal">Pro</h4>
+			          </div>
+			          <div class="card-body">
+			            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+			            <ul class="list-unstyled mt-3 mb-4">
+			              <li>20 users included</li>
+			              <li>10 GB of storage</li>
+			              <li>Priority email support</li>
+			              <li>Help center access</li>
+			            </ul>
+			            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+			          </div>
+			        </div>
+			        <div class="card mb-4 shadow-sm">
+			          <div class="card-header">
+			            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+			          </div>
+			          <div class="card-body">
+			            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+			            <ul class="list-unstyled mt-3 mb-4">
+			              <li>30 users included</li>
+			              <li>15 GB of storage</li>
+			              <li>Phone and email support</li>
+			              <li>Help center access</li>
+			            </ul>
+			            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+			          </div>
+			        </div>
+			      </div>
+				</div>
 			</div>
 		);
 	}
@@ -201,8 +158,8 @@ class ServiceList extends Component {
 class MainPoints extends Component {
 	render() {
 		return (
-			<div className="bg-dark">
-                <div className="container-fluid">
+			<div className="bg-dark" id="mainpoints">
+                <div className="container-fluid" id="desc">
                 	<div className="row" id="desc-row1">
                 		<div className="col-sm-4 text-center"/>
 	                	<div className="col-sm-4 text-center" id="title">

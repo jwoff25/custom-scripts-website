@@ -84,8 +84,7 @@ h2, h4 {
 }
 
 #title {
-    border: groove;
-    border-radius: 5px;
+    
 }
 
 #title-text {
@@ -150,10 +149,6 @@ h2, h4 {
     
     #desc-row1 {
         padding-bottom: 25px !important;
-    }
-    
-    #midtext {
-        
     }
     
 }
