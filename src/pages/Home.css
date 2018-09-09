@@ -36,6 +36,10 @@ body {
     padding-bottom: 20px;
 }
 
+#pad-top {
+    padding-top: 20px;
+}
+
 .list-group {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -113,7 +117,6 @@ h2, h4 {
 }
 
 #desc {
-    padding-top: 30px;
 }
 
 @media screen and (max-width: 768px) {

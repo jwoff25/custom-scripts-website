@@ -7,7 +7,7 @@ import './Navbar.css';
 class Navbar extends Component {
     render() {
         return (
-            <Scrollspy items={ ['home', 'description', 'mainpoints', 'userform'] } currentClassName="is-current">
+            <Scrollspy items={ ['home', 'description', 'pricing', 'mainpoints', 'userform'] } currentClassName="is-current">
                 <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -23,7 +23,10 @@ class Navbar extends Component {
                                     <a className="nav-link" href="#description">Services</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#mainpoints">Offers</a>
+                                    <a className="nav-link" href="#mainpoints">Guarantees</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#pricing">Tiers</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" id="special-nav" href="#userform">Contact</a>
