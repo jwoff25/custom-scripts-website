@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './Home_jp.css';
 import 'react-vertical-timeline-component/style.min.css';
-import Form from '../components/Form.jsx';
+import Formjp from '../components/Form_jp.jsx';
 //import Navbar from '../components/Navbar.jsx';
 //import Footer from '../components/Footer.jsx';
 
-class Home extends Component {
+class Home_jp extends Component {
     render() {
         return (
             <div id="home">
                 <div className="jumbotron text-center bg-dark">
-					<h1 className="display-4" id="page-title">> Automate your processes.</h1> 
-					<p className="lead">Tech consulting and scripting solutions for tedious daily/business related tasks. Easy to use, and easier to get started.</p><br/>
+					<h1 className="display-4" id="page-title">> あらゆるプログラミングソリューションを、ここに。</h1> 
+					<p className="lead">冗長な日常業務を改善するITコンサルティング・スクリプト作成サービス。気軽にご相談ください。</p><br/>
 					<p><a className="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#modalContactForm">Place an Order &raquo;</a></p>
 				</div>
 				<Description />
 				<MainPoints />
 				<ServiceList />
-				<Form />
+				<Formjp />
 				
 				<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" method="post">
 				    <div class="modal-dialog" role="document">
@@ -106,13 +106,13 @@ class Description extends Component {
                 		<div className="col-sm-1 text-center"/>
 	                	<div className="col-sm-5 text-center">
 	                		<span className="fas fa-clipboard-list fa-10x"/>
-	                		<h2 className="display-6">Small Scale Tech Consulting</h2>
-	                		<p className="lead">We will help you evaluate any tedious or inefficient work in your business and present automated solutions.</p>
+	                		<h2 className="display-6">深く、狭くを掲げたコンサルティングサービス</h2>
+	                		<p className="lead">お客様の事業においてより改善の余地がある箇所を我々が調査し、解決策を提案します。</p>
 	                	</div>
 	                	<div className="col-sm-5 text-center">
 	                		<span className="fas fa-code fa-10x"/>
-	                		<h2 className="display-6">Process Automation</h2>
-	                		<p className="lead">Eliminate busy work and optimize your job using our programs.</p>
+	                		<h2 className="display-6">プロセスの効率化</h2>
+	                		<p className="lead">弊社サービスで、作業的な業務を効率化。</p>
 	                	</div>
 	                	<div className="col-sm-1 text-center"/>
 	                </div>
@@ -257,8 +257,8 @@ class MainPoints extends Component {
 	                	</div>
 	                	<div className="col-sm-4 text-center">
 	                		<span className="fas fa-question-circle fa-2x"/>
-	                		<h4>On-Demand Q&A</h4>
-	                		<p className="small" id="offer-text-6">Always prepared to answer questions and address concerns.</p>
+	                		<h4>On-Demand Support</h4>
+	                		<p className="small" id="offer-text-6">Always prepared to fix bugs and address concerns.</p>
 	                	</div>
 	                </div>
                 </div>
@@ -267,4 +267,4 @@ class MainPoints extends Component {
 	}
 }
 
-export default Home;
+export default Home_jp;

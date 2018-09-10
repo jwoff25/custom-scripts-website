@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 // eslint-disable-next-line
 import Scrollspy from 'react-scrollspy';
-import './Navbar.css';
+import './Navbar_jp.css';
 
 class Navbar extends Component {
     render() {
