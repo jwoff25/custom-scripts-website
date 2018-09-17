@@ -17,23 +17,23 @@ class Navbar extends Component {
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#home">Home <span className="sr-only">(current)</span></a>
+                                    <a className="nav-link" href="#home">ホーム <span className="sr-only">(current)</span></a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#description">Services</a>
+                                    <a className="nav-link" href="#description">サービス</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#mainpoints">Guarantees</a>
+                                    <a className="nav-link" href="#mainpoints">保証</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#pricing">Tiers</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" id="special-nav" href="#userform">Contact</a>
+                                    <a className="nav-link" id="special-nav" href="#userform">お問い合わせ</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Language
+                                      言語
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="/">ENG</a>

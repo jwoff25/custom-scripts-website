@@ -28,7 +28,7 @@ class Home extends Component {
 				                    <span aria-hidden="true">&times;</span>
 				                </button>
 				            </div>
-				            <form class="modal-body mx-3" action="https://formspree.io/customscripts.order@gmail.com" method="POST">
+				            <form class="modal-body mx-3" action="https://formspree.io/admin@custom-scripts.xyz" method="POST">
 				                <div class="md-form mb-2">
 				                    <i class="fa fa-user prefix grey-text"></i>
 				                    <label data-error="wrong" data-success="right" for="form34">&nbsp;Your name</label>
@@ -128,9 +128,9 @@ class Description extends Component {
                 	<div className="row" id="desc-row2">
 	                	<div className="col-sm-4 text-center desc-comp">
 	                		<i class="fas fa-chart-pie fa-10x"></i>
-	                		<h4>Graph / Charts</h4>
+	                		<h4>Data Analysis / Graphs</h4>
 	                		<p className="lead">
-	                			Automated scripts to create graphs and charts based on data/files passed into it. 
+	                			Automated scripts to analyze data and create graphs based on data/files passed into it. 
 	                		</p>
 	                	</div>
 	                	<div className="col-sm-4 text-center desc-comp">
