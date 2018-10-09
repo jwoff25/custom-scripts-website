@@ -21,7 +21,7 @@ class Form_jp extends Component {
 		      <p class="lead">質問から注文まで、お客様の疑問にお答えします。下記フォームに入力してください。</p>
 		    </div>
 				<div className="container">
-				<form method="POST" action="https://formspree.io/admin@custom-scripts.xyz">
+				<form method="POST" action="https://formspree.io/order@custom-scripts.xyz">
 					<div class="form-group">
 						<label for="exampleFormControlInput1">名前</label>
 						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe" name="name"/>

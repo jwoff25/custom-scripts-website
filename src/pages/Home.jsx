@@ -28,7 +28,7 @@ class Home extends Component {
 				                    <span aria-hidden="true">&times;</span>
 				                </button>
 				            </div>
-				            <form class="modal-body mx-3" action="https://formspree.io/admin@custom-scripts.xyz" method="POST">
+				            <form class="modal-body mx-3" action="https://formspree.io/order@custom-scripts.xyz" method="POST">
 				                <div class="md-form mb-2">
 				                    <i class="fa fa-user prefix grey-text"></i>
 				                    <label data-error="wrong" data-success="right" for="form34">&nbsp;Your name</label>
@@ -170,7 +170,7 @@ class ServiceList extends Component {
 			      <div class="card-deck mb-3 text-center">
 			        <div class="card mb-4 shadow-sm">
 			          <div class="card-header">
-			            <h4 class="my-0 font-weight-normal">Personal</h4>
+			            <h4 class="my-0 font-weight-normal">Tier 3</h4>
 			          </div>
 			          <div class="card-body">
 			            <h1 class="card-title pricing-card-title">1~3 Days</h1>
@@ -185,7 +185,7 @@ class ServiceList extends Component {
 			        </div>
 			        <div class="card mb-4 shadow-sm">
 			          <div class="card-header">
-			            <h4 class="my-0 font-weight-normal">Corporate</h4>
+			            <h4 class="my-0 font-weight-normal">Tier 2</h4>
 			          </div>
 			          <div class="card-body">
 			            <h1 class="card-title pricing-card-title">1~2 Week(s)</h1>
@@ -200,7 +200,7 @@ class ServiceList extends Component {
 			        </div>
 			        <div class="card mb-4 shadow-sm">
 			          <div class="card-header">
-			            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+			            <h4 class="my-0 font-weight-normal">Tier 1</h4>
 			          </div>
 			          <div class="card-body">
 			            <h1 class="card-title pricing-card-title">~1 Month</h1>
