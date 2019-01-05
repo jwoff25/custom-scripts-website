@@ -21,7 +21,7 @@ class Form extends Component {
 		      <p class="lead">Have a question? Want to place an order? Reach us through this form.</p>
 		    </div>
 				<div className="container">
-				<form method="POST" action="https://formspree.io/order@custom-scripts.xyz">
+				<form method="POST" action="https://formspree.io/jeremywoffinden25@gmail.com">
 					<div class="form-group">
 						<label for="exampleFormControlInput1">Name</label>
 						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe" name="name"/>

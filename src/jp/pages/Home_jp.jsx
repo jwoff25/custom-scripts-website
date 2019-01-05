@@ -10,7 +10,7 @@ class Home_jp extends Component {
         return (
             <div id="home">
                 <div className="jumbotron text-center bg-dark">
-					<h1 className="display-4" id="page-title">> あらゆるプログラミングソリューションを、ここに。</h1> 
+					<h1 className="display-4" id="page-title">> あらゆるITソリューションを、ここに。</h1> 
 					<p className="lead">冗長な日常業務を楽にするITコンサルとスクリプトサービス。発注から導入まで、簡単に。</p><br/>
 					<p><a className="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#modalContactForm">発注する &raquo;</a></p>
 				</div>
@@ -28,7 +28,7 @@ class Home_jp extends Component {
 				                    <span aria-hidden="true">&times;</span>
 				                </button>
 				            </div>
-				            <form class="modal-body mx-3" action="https://formspree.io/order@custom-scripts.xyz" method="POST">
+				            <form class="modal-body mx-3" action="https://formspree.io/jeremywoffinden25@gmail.com" method="POST">
 				                <div class="md-form mb-2">
 				                    <i class="fa fa-user prefix grey-text"></i>
 				                    <label data-error="wrong" data-success="right" for="form34">&nbsp;名前</label>

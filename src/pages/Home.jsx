@@ -18,7 +18,6 @@ class Home extends Component {
 				<MainPoints />
 				<ServiceList />
 				<Form />
-				
 				<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" method="post">
 				    <div class="modal-dialog" role="document">
 				        <div class="modal-content">
@@ -28,7 +27,7 @@ class Home extends Component {
 				                    <span aria-hidden="true">&times;</span>
 				                </button>
 				            </div>
-				            <form class="modal-body mx-3" action="https://formspree.io/order@custom-scripts.xyz" method="POST">
+				            <form class="modal-body mx-3" action="https://formspree.io/jeremywoffinden25@gmail.com" method="POST">
 				                <div class="md-form mb-2">
 				                    <i class="fa fa-user prefix grey-text"></i>
 				                    <label data-error="wrong" data-success="right" for="form34">&nbsp;Your name</label>
