@@ -49,26 +49,6 @@ class Navbar extends Component {
                     Contact
                   </a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Language
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/">
-                      ENG
-                    </a>
-                    <a class="dropdown-item" href="/jp">
-                      JPN
-                    </a>
-                  </div>
-                </li>
               </ul>
             </div>
           </div>
